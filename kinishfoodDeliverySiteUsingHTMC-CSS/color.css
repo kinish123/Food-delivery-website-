@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+/*navigation bar*/
+#navbar {
+    position: relative;
+    /* relative means both item will be diffrentate and absolute mean item will come on parent */
+    /* set according to web page -relative */
+    top: 0px;
+    align-items: center;
+
+}
+
+#navbar {
+    /* "#" to design id*/
+    display: flex;
+    /* flex is used to align in row with logo */
+
+
+    align-items: center;
+    /*to hold the content in center of flex box */
+
+
+    /*ustify-content: center;->it will move the content to cntre*/
+
+    padding: 0.5px 1px;
+    height: 100px;
+
+}
+
+/* Navigation bar:logo and images*/
+#logo img {
+    height: 150px;
+    margin: 34px 45px;
+
+}
+
+#navbar ul {
+    display: flex;
+    /* dipaly in row sequence  */
+
+    font-family: 'Ballo bhai', cursive;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    /* bullots will not come */
+
+    font-size: 1.3rem;
+}
+
+/* we are padding in anchor tag to provide hover */
+#navbar ul li a {
+
+    color: aliceblue;
+    display: block;
+    /* by defalult inline */
+    /* diaplay box to provide padding  */
+    /* block also acts as div */
+
+    padding: 10px 10px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    /* under line will be removed */
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: white;
+    display: block;
+    /* by defalult inline */
+    /* diaplay box to provide padding  */
+
+    padding: 10px 10px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    /* under line will be removed */
+}
+
+/* targeting old nav bar */
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* aboslute to cover nesessary area */
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+    /* content will be over the back strip */
+
+    opacity: 0.4;
+    /* fade the colour of balck */
+
+    top: 0px;
+    left: 0px;
+}
+
+/* Home section  */
+#home {
+    display: flex;
+
+    flex-direction: column;
+    /* arrange diffrent felx box contaiing diffrent itme in coloum */
+
+    padding: 3px 20px;
+    height: 500px;
+
+    justify-content: center;
+    align-items: center;
+    /* heading will shift to cnter */
+}
+
+/* using psudo selector for background  images */
+#home::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* aboslute to cover nesessary area or perticular area which we assigned*/
+    background-image: url("images/bg\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 600px;
+    width: 100%;
+
+    z-index: -1;
+    /* content will be over the back strip */
+
+    opacity: 0.89;
+    /* fade the colour of balck */
+
+    top: 0px;
+    left: 0px;
+    /* used to set the section or parent sectiom on nav bar before ..you have to do it in both before of nav and section */
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5 rem;
+    font-family: 'Bree serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#services {
+
+    padding: 10px 10px;
+    margin: 1px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 11px;
+    margin: 5px;
+    border-radius: 23px;
+    background-color: rgb(135, 83, 83);
+    font-family: 'Bree Serif', serif;
+
+
+}
+
+#services img {
+    height: 156px;
+
+    margin: auto;
+    /* margin auto will work only with disoplay boloch */
+    display: block;
+}
+
+/* cilints section */
+#client-section {
+    position: relative;
+    padding: 10px 10px;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-image: url(images/lolo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-items {
+    padding: 20px;
+
+}
+
+#clients img {
+    height: 155px;
+
+}
+
+/* contact section */
+#contact {
+    position: relative;
+    height: 475px;
+
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url(images/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',
+        serif;
+
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+/* utility class */
+.h-primary {
+    font-size: 2rem;
+    padding: 12 px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    opacity: 1;
+    z-index: -1;
+
+}
+
+.h-secondary {
+    text-align: center;
+    font-size: 1rem;
+    padding: 12 px;
+    opacity: 1;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    margin: 17px;
+    font-size: 1.3rem;
+
+    border-radius: 10px;
+    /* it eill give curve effect */
+
+    cursor: pointer;
+    /* it will give a finger effect */
+}
+
+.center {
+    text-align: center;
+}

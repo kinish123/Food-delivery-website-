@@ -1,0 +1,50 @@
+#navbar {
+    flex-direction: column;
+    top: -168px;
+    height: 41px;
+
+}
+
+
+#navbar ul li a {
+    font-size: 0.5rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+
+
+}
+
+#home {
+    height: 329px;
+    padding: 3px 68px;
+}
+
+#home::before {
+    height: 379px;
+
+}
+
+#home h1 {
+    font-size: 1.5 rem;
+}
+
+#home p {
+    font-size: 15 px;
+}
+
+#services {
+    flex-direction: column;
+}
+
+#services img {
+
+    height: 66px;
+}
+
+#clients {
+    flex-wrap: wrap;
+}
+
+.h-primary {
+    font-size: 1.5 rem;
+}

@@ -1,4 +1,3 @@
-# LoveleshSite-Git
 
 this website is purely built on HTML/CSS !
 
